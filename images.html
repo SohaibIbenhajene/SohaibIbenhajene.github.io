@@ -7,61 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/image_mobile_screen.css" media="screen">
-    <link rel="stylesheet" href="css/image_mobile_screen.css" media="screen and (min-width: 500px)">
+    <link rel="stylesheet" href="css/image_wide_screen.css" media="screen and (min-width: 600px)">
     <link rel="stylesheet" href="css/image_print_screen.css" media="print">
     <title>Images</title>
 </head>
 
 <body>
     <main>
-        <h1><span class="hideonsmall">Portfolio - </span><span class="showonsmall">Images</span></h1>
-        <figure class="showonsmall">
+        <h1><span class="hideonsmall showonwide showonprint">Portfolio - </span><span class="showonsmall showonwide showonprint">Images</span></h1>
+        <figure class="showonsmall showonwide showonprint">
             <img src="images/pexels-sohaib-ibenhajene-10379368.jpg" alt="A rock with a white background">
-            <figcaption>Using the rock for praying</figcaption>
+            <figcaption class="hideonprint">Using the rock for praying</figcaption>
         </figure>
-        <p class="hideonsmall">
+        <p class="hideonsmall showonwide hideonprint">
             I'm a muslim and in the Islam before praying you have to wash yourself with water in a certain way. Except for
             example if you're traveling or have no direct access to water you are allowed to do this with a clean rock. I
             found this rock when I was young and I have always treasured this specific rock. I know it might sound dumb but
-            for me it has some value since i've used it for multiple years.<br>
+            for me it has some value since i've used it for multiple years.<br><br>
             This image fits in the theory of composition techniques because it is a very simplistic image and it gives me a
             calm, relaxed feeling.
         </p>
-        <table id="summary">
+        <table id="summary" class="hideonwide">
             <tr>
-                <td>Composition Type</td>
+                <th>Composition Type</th>
                 <td>Simplistic</td>
             </tr>
             <tr>
-                <td>Photographer</td>
+                <th>Photographer</th>
                 <td>Sohaib Ibenhajene</td>
             </tr>
             <tr>
-                <td>Location</td>
-                <td><a class="showonsmall" href="https://www.pexels.com/@sohaib-ibenhajene-142450517?onboarding=completed">Pexels</a> <span class="hideonsmall">https://www.pexels.com/@sohaib-ibenhajene-142450517</span></td>
+                <th>Location</th>
+                <td><a class="showonsmall hideonprint" href="https://www.pexels.com/@sohaib-ibenhajene-142450517?onboarding=completed">Pexels</a> <span class="hideonsmall showonprint">https://www.pexels.com/@sohaib-ibenhajene-142450517</span></td>
             </tr>
             <tr>
-                <td>Downloads</td>
+                <th>Downloads</th>
                 <td>3</td>
             </tr>
             <tr>
-                <td>Views</td>
+                <th>Views</th>
                 <td>80</td>
             </tr>
         </table>
 
 
-        <nav>
+        <nav class="hideonprint">
             <ul>
                 <li><p class="showonsmall"><i class="fas fa-home"></i><a href="index.html">Back to homepage</a></p></li>
             </ul>
         </nav>
 
-        <footer class="hideonsmall">Footer with links to 
+        <footer class="hideonsmall showonwide hideonprint">
             <ul>
-                <li><a href="https://www.pexels.com/@sohaib-ibenhajene-142450517?onboarding=completed">Pexels</a></li>
-                <li><a href="https://github.com/SohaibIbenhajene">Github</a></li>
-                <li><a href="#">Top of the page</a></li>
+                <li><i class="far fa-images"></i><a href="https://www.pexels.com/@sohaib-ibenhajene-142450517?onboarding=completed">Pexels</a></li>
+                <li><i class="fab fa-github"></i><a href="https://github.com/SohaibIbenhajene">Github</a></li>
             </ul>
         </footer>
     </main>

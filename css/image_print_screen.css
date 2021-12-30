@@ -1,0 +1,30 @@
+body{
+    font-family: sans-serif;
+}
+
+h1 .showonprint{
+    display: inline;
+}
+.showonprint{
+    display: block;
+}
+.hideonprint{
+    display: none;
+}
+
+img{
+    filter:grayscale(1);
+}
+
+table th{
+    text-align: left;
+    padding-right: 10px;
+}
+table td{
+    border-left: 3px solid black;
+    padding-left: 10px;
+}
+table{
+    border-collapse: collapse;
+    margin-left: 40px;
+}

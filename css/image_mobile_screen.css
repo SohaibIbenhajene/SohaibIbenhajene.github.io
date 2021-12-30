@@ -4,6 +4,9 @@
 body{
     font-family: 'Roboto Mono', monospace;
 }
+h1{
+    font-family: 'Magra', sans-serif;
+}
 
 .hideonsmall{
     display: none;
@@ -28,13 +31,12 @@ img{
 
 table{
     border-collapse: collapse;
-    border: 2px solid black;
     text-align: center;
     margin: auto;
     margin-top: 10px;
 }
-table td{
-    border: 2px solid black;
+table td, table th{
+    border: 2px solid cadetblue;
     padding: 6px;
 }
 

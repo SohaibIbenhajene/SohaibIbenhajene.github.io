@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@700&family=Roboto+Mono&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background:
+    linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+    linear-gradient(63deg, transparent 74%, #999 78%),
+    linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+  #444;
+    background-size: 16px 48px;
+}
+h1{
+    font-size: 45px;
+}
+p, a{
+    font-size: 18px;
+}
+
+
+h1 .showonwide{
+    display: inline-block;
+}
+.showonwide{
+    display: block;
+}
+.hideonwide{
+    display: none;
+}
+
+
+footer ul li, footer ul{
+    display: inline;
+    padding-left: 0;
+}
+footer li{
+    margin: 50px;
+}
+footer a:hover{
+    background-color: rgb(30, 52, 53);
+    color: white;
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(30, 52, 53);
+}
+
+main{
+    background-color: white;
+    border: 5px solid rgb(30, 52, 53);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 70%;
+    margin: auto;
+}
+img{
+    border: 3px solid cadetblue;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(30, 52, 53);
+}
