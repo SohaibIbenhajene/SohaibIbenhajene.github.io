@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/image_mobile_screen.css" media="screen">
+    <link rel="stylesheet" href="css/image_mobile_screen.css" media="screen and (min-width: 500px)">
+    <link rel="stylesheet" href="css/image_print_screen.css" media="print">
     <title>Images</title>
 </head>
 
 <body>
     <main>
-        <h1>Portfolio - Images</h1>
-        <h2>My favourite rock</h2>
-        <figure>
+        <h1><span class="hideonsmall">Portfolio - </span><span class="showonsmall">Images</span></h1>
+        <figure class="showonsmall">
             <img src="images/pexels-sohaib-ibenhajene-10379368.jpg" alt="A rock with a white background">
             <figcaption>Using the rock for praying</figcaption>
         </figure>
-        <p>
+        <p class="hideonsmall">
             I'm a muslim and in the Islam before praying you have to wash yourself with water in a certain way. Except for
             example if you're traveling or have no direct access to water you are allowed to do this with a clean rock. I
             found this rock when I was young and I have always treasured this specific rock. I know it might sound dumb but
@@ -25,13 +27,37 @@
             This image fits in the theory of composition techniques because it is a very simplistic image and it gives me a
             calm, relaxed feeling.
         </p>
+        <table id="summary">
+            <tr>
+                <td>Composition Type</td>
+                <td>Simplistic</td>
+            </tr>
+            <tr>
+                <td>Photographer</td>
+                <td>Sohaib Ibenhajene</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td><a class="showonsmall" href="https://www.pexels.com/@sohaib-ibenhajene-142450517?onboarding=completed">Pexels</a> <span class="hideonsmall">https://www.pexels.com/@sohaib-ibenhajene-142450517</span></td>
+            </tr>
+            <tr>
+                <td>Downloads</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Views</td>
+                <td>80</td>
+            </tr>
+        </table>
+
+
         <nav>
             <ul>
-                <li><p><a href="index.html">Back to homepage</a></p></li>
+                <li><p class="showonsmall"><i class="fas fa-home"></i><a href="index.html">Back to homepage</a></p></li>
             </ul>
         </nav>
 
-        <footer>Footer with links to 
+        <footer class="hideonsmall">Footer with links to 
             <ul>
                 <li><a href="https://www.pexels.com/@sohaib-ibenhajene-142450517?onboarding=completed">Pexels</a></li>
                 <li><a href="https://github.com/SohaibIbenhajene">Github</a></li>
