@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+nav li{
+    width: 100%;
+    background-color: rgb(199, 199, 243);
+    margin: 10px 0;
+}
+nav a{
+    display: block;
+    padding: 10px;
+}
+nav a, footer a{
+    color: black
+}
+
+footer a{
+    background-color: rgb(199, 199, 243);
+    padding: 10px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+footer a:hover, nav a:hover{
+    color: orange;
+}
+
+.nopadding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+@media screen and (min-width: 768px){
+    .container_style{
+        border: 3px solid rgb(143, 143, 250)!important;
+        border-radius: 20px;
+        margin: 10px auto;
+        background-color: white;
+    }
+
+    body{
+        background-color:#556;
+        background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+        linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+        linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+        linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+        linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+        linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+        background-size:80px 140px;
+        background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    }
+
+    .nopadding{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+@media screen and (min-width: 990px){
+    .nopadding img{
+        padding: 8px;
+    }
+}
