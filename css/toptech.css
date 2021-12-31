@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@700&family=Monda:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+body{
+    font-family: 'Monda', sans-serif;
+    background-color: rgb(13, 14, 13);
+    color: white;
+}
+h1, h2{
+    font-family: 'Magra', sans-serif;
+}
+a{
+    color: green;
+}
+a:hover{
+    color: white;
+}
+
+.hideonsmall{
+    display: none;
+}
+.showonsmall{
+    display: block;
+}
+
+#mobile_image{
+    max-width: 100%;
+    clip-path: polygon(50% 0, 90% 12%, 100% 84%, 75% 100%, 25% 100%, 0 82%, 11% 12%);
+    margin: auto;
+}
+#mobile_image:hover{
+    filter:invert(1);
+}
+
+footer ul li, footer ul{
+    display: inline;
+    padding-left: 0;
+}
+footer li{
+    margin: 20px;
+}
+footer{
+    text-align: left;
+    padding: 5px;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        font-size: 18px;
+        margin: 0;
+    }
+
+    #medium_image{
+        max-width: 100%;
+    }
+
+    main{
+        border: 3px solid white;
+        padding: 10px;
+        width: 70%;
+        margin: 10px auto;
+    }
+    footer{
+        text-align: center;
+        padding: 5px;
+        background-color: white;
+        margin: 0;
+    }
+    header{
+        border-bottom: 5px solid white;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: rgb(37, 37, 37);
+    }
+    h1{
+        margin-top: 0;
+    }
+    footer a:hover{
+        color: black;
+    }
+
+    h1 .showonmedium{
+        display: inline;
+    }
+    .showonmedium{
+        display: block;
+    }
+    .hideonmedium{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        font-size: 25px;
+        background-image: url(../images/pexels-neron-photos-6014048.jpg);
+        background-repeat: no-repeat;
+    }
+    
+    header{
+        background-color: transparent;
+        border: none;
+    }
+    main{
+        background-color:rgba(14, 20, 14, 0.8);
+        border: none;
+    }
+
+    .showonlarge{
+        display: block;
+    }
+    .hideonlarge{
+        display: none;
+    }
+}
