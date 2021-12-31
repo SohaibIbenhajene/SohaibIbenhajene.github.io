@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+footer ul li, footer ul, nav ul{
+    display: inline;
+    padding-left: 0;
+}
+footer li{
+    margin: 20px;
+}
+footer span, nav span{
+    white-space: nowrap;
+}
+a:hover{
+    color: #A6763C;
+}
+footer{
+    text-align: left;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+main{
+    max-width: 100%;
+    margin: auto;
+}
+figure{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+header, footer{
+    background-color: #590303;
+    color: white;
+    padding: 10px;
+}
+footer a{
+    color: white;
+}
+nav, nav a{
+    color: #590303;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+    max-width: 640px;
+    background-color: #A6763C;
+    margin-bottom: 10px;
+}
+table td, table th{
+    border: 3px solid #022873;
+    padding: 5px;
+    text-align: center;
+}
+table th{
+    width: 40%;
+}
+table td{
+    width: 60%;
+}
+
+.showonsmall{
+    display: block;
+}
+.hideonsmall{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+
+    body{
+        background-color: #D9BFB0;
+    }
+    main{
+        width: 730px;
+        border: 3px solid #8C512E;
+        padding: 10px;
+        background-color: white;
+        height: 100%;
+    }
+
+    footer{
+        clear: both;
+    }
+
+    figure{
+        float: right;
+    }
+    figcaption{
+        display: none;
+    }
+
+    img{
+        width: 400px;
+    }
+
+    table{
+        position: relative;
+        float: left;
+        max-width: 40%;
+        margin-left: 15px;
+    }
+    h2{
+        text-align: center;
+    }
+
+    ul{
+        list-style: none;
+    }
+    
+    nav span{
+        position: fixed;
+        padding: 10px;
+        border: 3px solid #8C512E;
+        border-radius: 10px;
+        background-color: white;
+        top: 0px;
+        left: 0px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    h1 .showonlarge{
+        display: inline;
+    }
+    .showonlarge{
+        display: block;
+    }
+    .hideonlarge{
+        display: none;
+    }
+    
+    figure:hover > figcaption{
+        display: block;
+        position: absolute;
+        margin-top: -305px;
+        color: white;
+        background-color: rgba(140,81,46, 0.4);
+        padding: 139px 115px;
+    }
+}
