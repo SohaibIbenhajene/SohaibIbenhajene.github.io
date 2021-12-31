@@ -7,66 +7,86 @@
     <meta name="description" content="Mijn naam is Sohaib Ibenhajene een 18-jarige gedreven IT'er. Neem gerust een kijkje op mijn persoonlijke website!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Sohaib Ibenhajene</title>
 </head>
 
 <body>
     <main>
-        <svg width="200px" height="200px">
-           <circle cx="100" cy="100" r="90" fill="orange" stroke="black" stroke-width="7" /> 
-           <line x1="52" y1="20" x2="148" y2="180" stroke="black" stroke-width="7" />
-           <line x1="22" y1="150" x2="178" y2="56" stroke="black" stroke-width="7" />
-           <circle cx="-9" cy="170" r="100" fill="none" stroke="black" stroke-width="7" />
-           <circle cx="209" cy="30" r="100" fill="none" stroke="black" stroke-width="7" />
-           <circle cx="100" cy="100" r="102" fill="none" stroke="white" stroke-width="18" /> 
-        </svg>
-        <h1>Portfolio</h1>
+        <header>
+            <svg width="200px" height="200px">
+               <circle cx="100" cy="100" r="90" fill="orange" stroke="black" stroke-width="7" />
+               <line x1="52" y1="20" x2="148" y2="180" stroke="black" stroke-width="7" />
+               <line x1="22" y1="150" x2="178" y2="56" stroke="black" stroke-width="7" />
+               <circle cx="-9" cy="170" r="100" fill="none" stroke="black" stroke-width="7" />
+               <circle cx="209" cy="30" r="100" fill="none" stroke="black" stroke-width="7" />
+               <circle cx="100" cy="100" r="102" fill="none" stroke="cadetblue" stroke-width="18" />
+            </svg>
+            <h1 class="hideonsmall showonlarge">Portfolio Sohaib Ibenhajene</h1>
+        </header>
         <article>
-            <h2>About me</h2>
-            <p>
-                My name is Sohaib Ibenhajene, an 18-year-old driven IT professional. Currently I am following the course
-                Applied Computer Science (IT Factory) at the campus Thomas More Geel.
-            </p>
-            <h3>Background</h3>
-            <p>
-                My interest in IT came to fruition in 2017, when I had put together a desktop computer for the first
-                time. I was scared of it at first because I thought something would definitely go wrong. But thanks to
-                the miracle "Youtube", I was able to successfully build my first desktop PC. In 2019 I decided to study
-                ITN (IT & Networks) at Heilig-Graf Patersstraat in Turnhout. I had chosen the course because it
-                perfectly matched my interest in IT. During these 2 years I developed my basic IT skills like working
-                with HTML & CSS, C#, MySQL and more.
-            </p>
-            <h3>Hobby's</h3>
-            <p>
-                From a young age I had a love for soccer, in fact I did it for 9 years. Now my interest is more in
-                basketball, I do this mostly in my free time. Of course, gaming is also one of my hobbies, I mainly play
-                games like Rocket League, Grand Theft auto V, Call Of Duty, ... I am also a big fan of Anime, my top 3
-                are: One Piece , Naruto and Attack On Titan.
-            </p>
+            <div class="text_parent">
+                <div class="grow_1">
+                    <h2>About me</h2>
+                    <p>
+                        My name is Sohaib Ibenhajene, an 18-year-old driven IT professional. Currently I am following the course
+                        Applied Computer Science (IT Factory) at the campus Thomas More Geel.
+                    </p>
+                </div>
+                <div class="grow_1">
+                    <h3>Background</h3>
+                    <p>
+                        My interest in IT came to fruition in 2017, when I had put together a desktop computer for the first
+                        time. I was scared of it at first because I thought something would definitely go wrong. But thanks to
+                        the miracle "Youtube", I was able to successfully build my first desktop PC. In 2019 I decided to study
+                        ITN (IT & Networks) at Heilig-Graf Patersstraat in Turnhout. I had chosen the course because it
+                        perfectly matched my interest in IT. During these 2 years I developed my basic IT skills like working
+                        with HTML & CSS, C#, MySQL and more.
+                    </p>
+                </div>
+                <div class="grow_1">
+                    <h3>Hobby's</h3>
+                    <p>
+                        From a young age I had a love for soccer, in fact I did it for 9 years. Now my interest is more in
+                        basketball, I do this mostly in my free time. Of course, gaming is also one of my hobbies, I mainly play
+                        games like Rocket League, Grand Theft auto V, Call Of Duty, ... I am also a big fan of Anime, my top 3
+                        are: One Piece , Naruto and Attack On Titan.
+                    </p>
+                </div>
+            </div>
+            <img src="images/pexels-sohaib-ibenhajene-10379371.jpg" alt="Picture of candle">
             <nav>
-                <h2>Design</h2>
-                <ul>
-                    <li><a href="images.html">Images</a></li>
-                    <li><a href="fontscolors.html">Colors and fonts</a></li>
-                </ul>
-                <h2>Tech</h2>
-                <ul>
-                    <li><a href="toptech.html">Top tech sites</a></li>
-                    <li><a href="retro.html">Retro stuff</a></li>
-                </ul>
-                <h2>Projects</h2>
-                <ul>
-                    <li>Bootstrap</li>
-                </ul>
+                <div class="parent">
+                    <div class="grow_2">
+                        <h2><i class="fas fa-ruler"></i> Design</h2>
+                        <ul>
+                            <li class="child"><a href="images.html">Images</a></li>
+                            <li class="child"><a href="fontscolors.html">Colors and fonts</a></li>
+                        </ul>
+                    </div>
+                    <div class="grow_2">
+                        <h2><i class="fas fa-cogs"></i> Tech</h2>
+                        <ul>
+                            <li class="child"><a href="toptech.html">Top tech sites</a></li>
+                            <li class="child"><a href="retro.html">Retro stuff</a></li>
+                        </ul>
+                    </div>
+                    <div class="grow_2">
+                        <h2><i class="far fa-calendar-alt"></i> Projects</h2>
+                        <ul>
+                            <li class="child"><a href="#">Bootstrap</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </article>
 
-        <footer>Footer with links to 
+        <footer>
             <ul>
-                <li><a href="https://www.pexels.com/@sohaib-ibenhajene-142450517?onboarding=completed">Pexels</a></li>
-                <li><a href="https://github.com/SohaibIbenhajene">Github</a></li>
-                <li><a href="#">Top of the page</a></li>
+                <li><span><i class="far fa-images"></i><a href="https://www.pexels.com/@sohaib-ibenhajene-142450517?onboarding=completed">Pexels</a></span></li>
+                <li><span><i class="fab fa-github"></i><a href="https://github.com/SohaibIbenhajene">Github</a></span></li>
+                <li><span><i class="fas fa-hand-point-up"></i><a href="#">Top&nbsp;of&nbsp;the&nbsp;page</a></span></li>
             </ul>
         </footer>
     </main>

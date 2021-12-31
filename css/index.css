@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    background-size: 53px 53px;
+    background-image: radial-gradient(
+    transparent 28px,
+    rgb(30, 52, 53) 28px,
+    rgb(30, 52, 53) 32px,
+    transparent 32px);
+}
+main{
+    background-color: white;
+    padding: 10px;
+}
+img{
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+footer span, nav span{
+    white-space: nowrap;
+}
+footer a, i{
+    color: cadetblue;
+}
+header{
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+}
+.child {
+    border: 1px solid rgb(30, 52, 53);
+    margin-bottom: 10px;
+    background-color: white;
+}
+.child:hover, .child:hover> a{
+    background-color:rgb(30, 52, 53);
+    color: white;
+}
+nav{
+    background-color: rgba(124, 235, 235, 0.2);
+    padding: 1px 5px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+nav a{
+    display: block;
+    padding: .5rem;
+}
+
+
+footer ul li, footer ul{
+    display: inline;
+    padding-left: 0;
+}
+footer li{
+    margin: 50px;
+}
+footer a:hover{
+    background-color: rgb(30, 52, 53);
+    color: white;
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(30, 52, 53);
+    margin-top: 10px;
+}
+
+
+.hideonsmall{
+    display: none;
+}
+.showonsmall{
+    display: block;
+}
+
+@media screen and (min-width: 600px){
+    main{
+        max-width: 80%;
+        margin: auto;
+        border: 3px solid rgb(30, 52, 53);
+    }
+    
+    .text_parent{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        display: flex;
+    }
+    .grow_1{
+        flex-grow: 1;
+        margin: 10px;
+        padding: 5px;
+        border: 2px solid rgb(30, 52, 53);
+    }
+    .parent{
+        flex-direction: row;
+        display: flex;
+        padding: 0px;
+    }
+    .grow_2{
+        flex-grow: 1;
+        flex-direction: column;
+        display: flex;
+        margin: 5px;
+    }
+
+    .showonlarge{
+        display: block;
+    }
+    .hideonlarge{
+        display: none;
+    }
+}
