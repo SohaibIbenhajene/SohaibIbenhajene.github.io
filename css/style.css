@@ -614,6 +614,9 @@ p{
     #projects .all-projects .project-info{
         height: 100%;
     }
+    #projects .project-img{
+        height: 100%;
+    }
     #projects .project-img img{
         height: 100%;
     }
@@ -673,6 +676,7 @@ p{
     }
     #contact .contact-item .icon img{
         object-fit: contain;
+        width: 70px;
     }
     #contact .contact-item .contact-info{
         width: 100%;
