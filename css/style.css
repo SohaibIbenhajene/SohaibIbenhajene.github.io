@@ -298,12 +298,24 @@ p{
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(../img/img-1.png);
     background-size: cover;
     margin: 10px 5%;
     position: relative;
     z-index: 1;
     overflow: hidden;
+}
+#services .service-item#perseverance{
+    background-image: url(../img/perseverance-bg.jpg);
+    background-position: center;
+}
+#services .service-item#communication{
+    background-image: url(../img/communication-bg.jpg);
+}
+#services .service-item#java{
+    background-image: url(../img/java-bg.jpg);
+}
+#services .service-item#mysql{
+    background-image: url(../img/mysql-bg.jpg);
 }
 #services .service-item::after{
     content: '';
@@ -388,6 +400,50 @@ p{
     overflow: hidden;
     position: relative;
 }
+#projects .project-img .layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #7734e7);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    z-index: 1;
+    transition: height 0.5s;
+}
+#projects .project-img .layer a{
+    text-decoration: none;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+#projects .project-img .layer:hover a::after{
+    position: relative;
+    display: block;
+    content: '';
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    border: 3px solid white;
+    top: -88%;
+    animation: hamburger_pulse 1s ease infinite;
+}
+#projects .project-item:hover .layer{
+    height: 100%;
+}
+#projects .project-img .layer img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
 #projects .project-img img{
     height: 300px;
 }
@@ -404,7 +460,7 @@ p{
 #projects .project-img img{
     transition: .3s ease transform;
 }
-#projects .project-item:hover .project-img img{
+#projects .project-item:hover .project-img .project-bg{
     transform: scale(1.1);
 }
 /* End Project Section */
@@ -596,6 +652,7 @@ p{
     #services .service-bottom .service-item{
         flex-basis: 45%;
         margin: 2.5%;
+        min-height: 424px;
     }
     /* End Services Section */
 
@@ -713,10 +770,16 @@ p{
     #services .service-bottom .service-item{
         flex-basis: 22%;
         margin: 1.5%;
+        height: 499px;
     }
 
     #contact .contact-info h2 span{
         display: inline;
+    }
+}
+@media only screen and (min-width:1600px){
+    #services .service-bottom .service-item{
+        height: 100%;
     }
 }
 /* End Media Query For Desktop */
