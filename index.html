@@ -135,8 +135,8 @@
                         <h1>Requirements Analysis</h1>
                         <h2>Working with a client</h2>
                         <p>For this project I had to work together with classmates. 
-                            We needed to make a use case model, a data model 
-                            and also prototypes according to the needs of the client. 
+                            We needed to make a use case model 
+                            and prototypes according to the needs of the client. 
                             We first started with a meeting with the client to get a 
                             basic understanding of their company. We followed this up 
                             with more meetings to get feedback from the client. Finally 
@@ -145,7 +145,7 @@
                     <div class="project-img">
                         <img class="project-bg" src="img/requirements-analysis.jpeg" alt="img">
                         <div class="layer">
-                            <a href="#"><img src="img/external-link.png" alt="img"></a>
+                            <a onclick="togglePopup1()"><img src="img/external-link.png" alt="img"></a>
                         </div>
                     </div>
                 </div>
@@ -165,7 +165,106 @@
                     <div class="project-img">
                         <img class="project-bg" src="img/devops_security.jpg" alt="img">
                         <div class="layer">
-                            <a href="#"><img src="img/external-link.png" alt="img"></a>
+                            <a onclick="togglePopup2()"><img src="img/external-link.png" alt="img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Requirements Analysis</h1>
+                    <div class="close-btn" onclick="togglePopup1()">&times;</div>
+                    <div class="popup-align">
+                        <div class="col-left">
+                            <h2>Description</h2>
+                            <p>A group project for Requirements Analysis where our 
+                                goal was solving all of the problems of our client 
+                                and developing the plans for a future application that they will be using. 
+                                We solved these issues by creating an accurate use 
+                                case model and getting feedback from the client. 
+                                With this use case model we could then create prototypes for the application.</p>
+                            <p>My role in this project was creating prototypes and 
+                                helping with the design of the use case model.
+                                Also during our meetings with the client, I asked 
+                                questions to get a better understanding of the client's 
+                                needs. During this project, I improved my communication 
+                                skills by always communicating clearly both verbally and written.</p>
+                        </div>
+                        <div class="col-right">
+                            <div class="slider">
+                                <div class="slides">
+                                    <input type="radio" name="radio-btn" id="radio1">
+                                    <input type="radio" name="radio-btn" id="radio2">
+                                    <!-- slide images start -->
+                                    <div class="slide first">
+                                        <img src="img/use-case-model.jpg" alt="use case model">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/prototype.png" alt="prototype">
+                                    </div>
+                                    <!-- slide images end -->
+                                </div>
+                                <!-- manual navigation start -->
+                                <div class="navigation-manual">
+                                    <label for="radio1" class="manual-btn"></label>
+                                    <label for="radio2" class="manual-btn"></label>
+                                </div>
+                                <!-- manual navigation end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>Devops & Security</h1>
+                    <div class="close-btn" onclick="togglePopup2()">&times;</div>
+                    <div class="popup-align">
+                        <div class="col-left">
+                            <h2>Description</h2>
+                            <p>I created a maze game using Windows Forms. 
+                                It was programmed in c# and I also implemented a SQLite database. 
+                                The game is very simple, first you can choose your difficulty 
+                                and fill in your username. Once you click play you'll be placed 
+                                inside the maze, you then have get to the end as fast as possible 
+                                without touching the walls. If you touch a wall you'll be brought 
+                                back to the beginning and lose a life. Depending on the difficulty 
+                                you'll have more or less lives. Once you finish you'll be presented 
+                                with a screen where you can see your score and also all the other highscores.</p>
+                            <p>During this project I sharpened my c# skills and worked with a SQLite 
+                                database for the first time. It is the first game that I created and defenitely 
+                                not the last. I really enjoyed working on this project, because it was so rewarding.
+                                 After coding for hours, I could actually start playing my game.<br>
+                                Checkout my game here! <a href="https://github.com/SohaibIbenhajene/CaseStudyDevops" target="_blank"><img src="/img/download.png" alt="download button"></a></p>
+                        </div>
+                        <div class="col-right">
+                            <div class="slider">
+                                <div class="slides">
+                                    <input type="radio" name="radio-btn" id="radio11">
+                                    <input type="radio" name="radio-btn" id="radio22">
+                                    <input type="radio" name="radio-btn" id="radio33">
+                                    <!-- slide images start -->
+                                    <div class="slide first">
+                                        <img src="img/maze-start.png" alt="Maze game intro screen">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/maze-game.png" alt="Maze gameplay">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/maze-end.png" alt="Maze game end">
+                                    </div>
+                                    <!-- slide images end -->
+                                </div>
+                                <!-- manual navigation start -->
+                                <div class="navigation-manual">
+                                    <label for="radio11" class="manual-btn"></label>
+                                    <label for="radio22" class="manual-btn"></label>
+                                    <label for="radio33" class="manual-btn"></label>
+                                </div>
+                                <!-- manual navigation end -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -173,6 +272,7 @@
         </div>
     </section>
     <!-- End Projects section -->
+
 
     <!-- Content Section -->
     <section id="contact">

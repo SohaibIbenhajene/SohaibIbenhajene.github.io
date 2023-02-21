@@ -44,3 +44,27 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+const body = document.querySelector("body");
+const popup1 = document.getElementById("popup-1");
+const popup2 = document.getElementById("popup-2");
+
+function togglePopup1(){
+    popup1.classList.toggle("active");
+    if(popup1.classList.contains("active")){
+        body.style.overflow = "hidden";
+    }
+    else{
+        body.style.overflow = "auto";
+    }
+}
+
+function togglePopup2(){
+    popup2.classList.toggle("active");
+    if(popup2.classList.contains("active")){
+        body.style.overflow = "hidden";
+    }
+    else{
+        body.style.overflow = "auto";
+    }
+}
