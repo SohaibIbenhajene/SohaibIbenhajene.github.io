@@ -20,6 +20,13 @@ a{
     align-items: center;
     justify-content: center;
 }
+.container-contact{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 img{
     height: 100%;
     width: 100%;
@@ -518,6 +525,11 @@ p{
     margin-bottom: 20px;
 }
 
+.popup .content .col-right{
+    width: 100%;
+    margin: 0 auto;
+}
+
 .popup .close-btn{
     position: absolute;
     right: 20px;
@@ -534,6 +546,10 @@ p{
     user-select: none;
 }
 
+.popup .close-btn:hover{
+    color: #aaa;
+}
+
 .popup.active .overlay{
     display: block;
 }
@@ -545,6 +561,10 @@ p{
 .popup .col-left img{
     width: 20px;
     height: 20px;
+}
+
+.popup-download-btn:hover{
+    filter: brightness(0) saturate(100%) invert(19%) sepia(62%) saturate(6746%) hue-rotate(261deg) brightness(96%) contrast(87%);
 }
 /* End Popup Section */
 
@@ -600,12 +620,32 @@ p{
 #radio11:checked ~ .first{
     margin-left: 0;
 }
+#radio111:checked ~ .first{
+    margin-left: 0;
+}
+#radio1111:checked ~ .first{
+    margin-left: 0;
+}
+
 #radio2:checked ~ .first,
 #radio22:checked ~ .first{
     margin-left: -20%;
 }
+#radio222:checked ~ .first{
+    margin-left: -20%;
+}
+#radio2222:checked ~ .first{
+    margin-left: -20%;
+}
+
 #radio3:checked ~ .first,
 #radio33:checked ~ .first{
+    margin-left: -40%;
+}
+#radio333:checked ~ .first{
+    margin-left: -40%;
+}
+#radio3333:checked ~ .first{
     margin-left: -40%;
 }
 /* End Manual slide navigation */
@@ -733,7 +773,7 @@ p{
     margin: 0 5px;
 }
 #footer .social-item img{
-    filter: grayscale(1);
+    filter: brightness(0) invert(1);
     transition: .3s ease filter;
 }
 #footer .social-item img:hover{

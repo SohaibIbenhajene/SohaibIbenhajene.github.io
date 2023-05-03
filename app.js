@@ -48,6 +48,8 @@ window.addEventListener("scroll", () => {
 const body = document.querySelector("body");
 const popup1 = document.getElementById("popup-1");
 const popup2 = document.getElementById("popup-2");
+const popup3 = document.getElementById("popup-3");
+const popup4 = document.getElementById("popup-4");
 
 function togglePopup1(){
     popup1.classList.toggle("active");
@@ -62,6 +64,26 @@ function togglePopup1(){
 function togglePopup2(){
     popup2.classList.toggle("active");
     if(popup2.classList.contains("active")){
+        body.style.overflow = "hidden";
+    }
+    else{
+        body.style.overflow = "auto";
+    }
+}
+
+function togglePopup3(){
+    popup3.classList.toggle("active");
+    if(popup3.classList.contains("active")){
+        body.style.overflow = "hidden";
+    }
+    else{
+        body.style.overflow = "auto";
+    }
+}
+
+function togglePopup4(){
+    popup4.classList.toggle("active");
+    if(popup4.classList.contains("active")){
         body.style.overflow = "hidden";
     }
     else{

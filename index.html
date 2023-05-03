@@ -169,9 +169,46 @@
                         </div>
                     </div>
                 </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project PHP</h1>
+                        <h2>De Stickies</h2>
+                        <p>For this project I had to work together with classmates.
+                            We needed to make a use case model, data model and multiple 
+                            prototypes according to the needs of our client. We then needed 
+                            to present these prototypes to our client to get feedback. 
+                            Finally we had to make a working php webapplication based on the
+                            prototypes and the feedback from the client. Our client wanted a 
+                            webapplication for their hockeclub called De Stickies.</p>
+                    </div>
+                    <div class="project-img">
+                        <img class="project-bg" src="img/php.jpg" alt="img">
+                        <div class="layer">
+                            <a onclick="togglePopup3()"><img src="img/external-link.png" alt="img"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Webdesign Advanced</h1>
+                        <h2>EZTyping</h2>
+                        <p>For this project I had to get creative with my classmates.
+                            We needed to make a website without a database, using HTML, 
+                            Javascript and Sass. We had our own choice in what we wanted to
+                            make. We decided to make a website where you can learn programming 
+                            languages. We called it EZTyping. We made a website where you can
+                            learn the basics of HTML, CSS, JavaScript, Lua, Java, Python, C# and TypeScript.</p>
+                    </div>
+                    <div class="project-img">
+                        <img class="project-bg" src="img/webdesign-advanced.jpg" alt="img">
+                        <div class="layer">
+                            <a onclick="togglePopup4()"><img src="img/external-link.png" alt="img"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="popup" id="popup-1">
-                <div class="overlay"></div>
+                <div class="overlay" onclick="togglePopup1()"></div>
                 <div class="content">
                     <h1>Requirements Analysis</h1>
                     <div class="close-btn" onclick="togglePopup1()">&times;</div>
@@ -217,7 +254,7 @@
                 </div>
             </div>
             <div class="popup" id="popup-2">
-                <div class="overlay"></div>
+                <div class="overlay" onclick="togglePopup2()"></div>
                 <div class="content">
                     <h1>Devops & Security</h1>
                     <div class="close-btn" onclick="togglePopup2()">&times;</div>
@@ -237,7 +274,7 @@
                                 database for the first time. It is the first game that I created and defenitely 
                                 not the last. I really enjoyed working on this project, because it was so rewarding.
                                  After coding for hours, I could actually start playing my game.<br>
-                                Checkout my game here! <a href="https://github.com/SohaibIbenhajene/CaseStudyDevops" target="_blank"><img src="/img/download.png" alt="download button"></a></p>
+                                Checkout my game here! <a href="https://github.com/SohaibIbenhajene/CaseStudyDevops" target="_blank"><img src="/img/download.png" alt="download button" class="popup-download-btn"></a></p>
                         </div>
                         <div class="col-right">
                             <div class="slider">
@@ -269,6 +306,116 @@
                     </div>
                 </div>
             </div>
+            <div class="popup" id="popup-3">
+                <div class="overlay" onclick="togglePopup3()"></div>
+                <div class="content">
+                    <h1>Project PHP</h1>
+                    <div class="close-btn" onclick="togglePopup3()">&times;</div>
+                    <div class="popup-align">
+                        <div class="col-left">
+                            <h2>Description</h2>
+                            <p>I am currently still working on the project with my team. The 
+                                project is about creating a webapplication for a client. We 
+                                are using the Scrum method to create the webapplication. We 
+                                are using PHP, HTML, CSS, JavaScript, Livewire, Tailwind and MySQL for
+                                the project. We are working well as a team, everyone has to do their bit and we are
+                                always helping each other out. I was mostly responsible for the 
+                                registration part of the application. We are currently still working on the project.
+                                But soon it will be finished!</p>
+                            <p>During this project I sharpened my php skills and worked with a 
+                                MySQL database. My webdesign skills also improved a lot and I 
+                                definitely improved my problem solving skills. I also learned 
+                                how to work with the Scrum method and how to work in a team.
+                                I'm very thankful for my team, because they have always helped 
+                                me and we worked well together.
+                                <br>
+                                Checkout our webapplication here! <a href="https://smoa.destickies.be/" target="_blank"><img src="/img/download.png" alt="download button" class="popup-download-btn"></a></p>
+                        </div>
+                        <div class="col-right">
+                            <div class="slider">
+                                <div class="slides">
+                                    <input type="radio" name="radio-btn" id="radio111">
+                                    <input type="radio" name="radio-btn" id="radio222">
+                                    <input type="radio" name="radio-btn" id="radio333">
+                                    <!-- slide images start -->
+                                    <div class="slide first">
+                                        <img src="img/php-homepage.png" alt="Webapplication homepage">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/php-register.png" alt="Registration page">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/php-calendar.png" alt="Calendar page">
+                                    </div>
+                                    <!-- slide images end -->
+                                </div>
+                                <!-- manual navigation start -->
+                                <div class="navigation-manual">
+                                    <label for="radio111" class="manual-btn"></label>
+                                    <label for="radio222" class="manual-btn"></label>
+                                    <label for="radio333" class="manual-btn"></label>
+                                </div>
+                                <!-- manual navigation end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-4">
+                <div class="overlay" onclick="togglePopup4()"></div>
+                <div class="content">
+                    <h1>Webdesign Advanced</h1>
+                    <div class="close-btn" onclick="togglePopup4()">&times;</div>
+                    <div class="popup-align">
+                        <div class="col-left">
+                            <h2>Description</h2>
+                            <p>I created a learning website using HTML, css and Sass. I used
+                                Sass for the first time and at first it was really difficult. But once
+                                I got the hang of it, it was really easy to use. I also used a lot of
+                                animations and transitions to make the website more interactive. I also
+                                used JavaScript for the very first time. I used it to create a hamburger
+                                menu for the mobile version of the website. The website was basically made 
+                                for a made up company, that would sell courses to learn how to code in 
+                                different programming languages.</p>
+                            <p>During this project I got better at leading a team and I also learned how to work
+                                with the Scrum method. I also learned how to work with Sass and JavaScript. I also
+                                learned how to deal with problems that occur during teamwork in a project. Such as 
+                                bad communication, sometimes not meeting deadlines and not doing your part of the project.
+                                But all of these stuggles ultimately made us a stronger team, because we learned from our
+                                mistakes and we learned how to deal with these problems. So, I'm very thankful for my team.
+                                <br>
+                                Checkout our website here! <a href="https://eztyping.netlify.app/" target="_blank"><img src="/img/download.png" alt="download button" class="popup-download-btn"></a></p>
+                        </div>
+                        <div class="col-right">
+                            <div class="slider">
+                                <div class="slides">
+                                    <input type="radio" name="radio-btn" id="radio1111">
+                                    <input type="radio" name="radio-btn" id="radio2222">
+                                    <input type="radio" name="radio-btn" id="radio3333">
+                                    <!-- slide images start -->
+                                    <div class="slide first">
+                                        <img src="img/webadvanced-homepage.jpg" alt="Website homepage">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/webadvanced-lua.png" alt="Lua page">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="img/webadvanced-java.png" alt="Java page">
+                                    </div>
+                                    <!-- slide images end -->
+                                </div>
+                                <!-- manual navigation start -->
+                                <div class="navigation-manual">
+                                    <label for="radio1111" class="manual-btn"></label>
+                                    <label for="radio2222" class="manual-btn"></label>
+                                    <label for="radio3333" class="manual-btn"></label>
+                                </div>
+                                <!-- manual navigation end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- End Projects section -->
@@ -276,7 +423,7 @@
 
     <!-- Content Section -->
     <section id="contact">
-        <div class="contact container">
+        <div class="contact container-contact">
             <h1 class="section-title">Contact <span>Info</span></h1>
             <div class="contact-items">
                 <div class="contact-item">
