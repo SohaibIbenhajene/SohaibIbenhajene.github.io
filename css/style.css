@@ -926,6 +926,23 @@ background: currentColor;
 }
 /* End Keyframes */
 
+@media only screen and (max-width:768px){
+    #projects .project-img a::after{
+        position: relative;
+        display: block;
+        content: '';
+        height: 90%;
+        width: 90%;
+        border-radius: 50%;
+        border: 3px solid white;
+        top: -88%;
+        animation: hamburger_pulse 1s ease infinite;
+    }
+    #projects .project-item .layer{
+        height: 100%;
+    }
+}
+
 /* Media Query For Tablet */
 @media only screen and (min-width:768px){
     .cta{
@@ -1040,6 +1057,21 @@ background: currentColor;
         margin: 0 auto;
     }
     /* End Popup Section */
+
+    #projects .project-img .layer:hover a::after{
+        position: relative;
+        display: block;
+        content: '';
+        height: 90%;
+        width: 90%;
+        border-radius: 50%;
+        border: 3px solid white;
+        top: -88%;
+        animation: hamburger_pulse 1s ease infinite;
+    }
+    #projects .project-item:hover .layer{
+        height: 100%;
+    }
 }
 /* End Media Query For Tablet */
 
